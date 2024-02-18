@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,135 @@
     <title>E-Ticket</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <main>
+        <!-- Nav -->
+        <div class="mx-auto lg:w-[1170px]">
+            <div class="navbar bg-base-100 ">
+                <div class="navbar-start text-[#030712]">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-[#030712B3] rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-4xl font-extrabold font-raleway">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a href="#psection" class="btn bg-[#1DD1001A] text-[#1DD100] font-raleway">Bus<img src="./images/bus-icon.png"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+        <!-- Banner -->
+        <div class="banner lg:h-[550px] mx-auto lg:w-[1170px] text-center">
+            <h1 class="font-raleway text-3xl lg:text-6xl font-extrabold text-white  pt-12 leading-[76px]">End-to-End
+                Travel with
+                <br> <span class="text-[#1DD100]">Pacific Expressway</span>
+            </h1>
+            <p class="font-inter font-normal text-white leading-[30px] mt-5">your trusted partner for end-to-end travel
+                solutions. Navigate effortlessly and arrive with confidence,<br> ensuring every trip is a smooth and
+                unforgettable experience</p>
+            <button class="btn btn-success bg-[#1DD100] font-raleway font-bold mt-5">Buy Tickets</button>
+        </div>
+        <!-- Best Offers -->
+        <div class="w-full lg:w-[1170px] h-auto mx-auto mt-40">
+            <h3 class="text-center font-raleway font-bold text-4xl mb-10">Best offers for you</h3>
+            <div class="flex gap-5 lg:leading-[10px]">
+                <div class="flex flex-col lg:flex-row  bg-[#FFBF0F]  w-[570px] rounded-3xl">
+                    <div class="flex flex-col p-12">
+                        <h3 class="font-inter font-black text-3xl text-[#030712CC]">15% OFF</h3> <br>
+                        <h5 class="font-inter font-semibold text-xl text-[#030712CC]">on your next purchase</h5><br>
+                        <p class="font-inter font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="./images/cupon-devider.png" alt="" class="w-[48px] h-full p-0 m-0">
+                    </div>
+                    <div class="flex flex-col items-center p-4 lg:p-12 lg:leading-[10px]">
+                        <h4 class="font-raleway font-bold text-2xl text-[#030712CC] leading-[60px] text-center">
+                            NEW<sub>15</sub></h4>
+                        <p class="font-inter font-medium text-[#03071280]">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="flex flex-row bg-[#F78C9C] w-[570px] rounded-3xl">
+                    <div class="flex flex-col p-12">
+                        <h3 class="font-inter font-black text-3xl text-[#030712CC]">20% OFF</h3> <br>
+                        <h5 class="font-inter font-semibold text-xl text-[#030712CC]">on your next purchase</h5><br>
+                        <p class="font-inter font-medium text-[#03071280]">use by January 2024</p>
+                    </div>
+                    <div class="hidden lg:block">
+                        <img src="./images/cupon-devider.png" alt="" class="w-[48px] h-full p-0 m-0">
+                    </div>
+                    <div class="p-10 mt-2 flex flex-col text-center leading-[10px]">
+                        <h4 class="font-raleway font-bold text-2xl text-[#030712CC] leading-[60px]">Couple 20</h4>
+                        <p class="font-inter font-medium text-[#03071280]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row justify-center items-center my-14">
+                <button class="btn border-[#1DD100] text-[#1DD100] ">See All Offers</button>
+            </div>
+        </div>
+        <!-- Paribahan Section -->
+        <div id="psection" class="w-full  single-border my-14">
+            <div class="w-[1170px] mx-auto">
+                <!-- Heading -->
+                <div class="mt-32">
+                    <h2 class="font-raleway font-bold text-4xl text-center">Pacific Expressway</h2>
+                    <p class="font-inter text-base text-[#03071299] py-6 text-center">Pacific Expressway, a modern
+                        marvel of infrastructure, seamlessly <br> navigates diverse landscapes, connecting urban hubs to
+                        coastal paradises. <br> With its innovative design and scenic routes.</p>
+                </div>
+                <!-- Schedule -->
+                <div class="bg-[#FFFFFF] w-full h-[418px] rounded-3xl p-8 ">
+                    <div class="flex justify-between">
+                        <div class="flex items-center gap-3">
+                            <div>
+                                <img src="./images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h3 class="font-raleway font-bold text-3xl">Pacific Expressway</h3>
+                                <p class="font-inter text-base text-[#03071299] ">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#1DD10026] text-[#1DD100] rounded-xl flex items-center gap-2 p-2">
+                            <div>
+                                <img src="./images/seat-green.png" alt="">
+                            </div>
+                            <div>
+                                <p>40 Seats Left</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+
+
+
+    </main>
 </body>
 
 </html>
