@@ -27,3 +27,15 @@
   border-radius: 88px 88px 0px 0px;
   background: rgb(247, 248, 248);
 }
+
+.seat {
+  border-radius: 12px;
+  background: #f7f8f8;
+  height: 56px;
+  width: 110px;
+  text-align: center;
+  color: rgba(3, 7, 18, 0.5);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+}
